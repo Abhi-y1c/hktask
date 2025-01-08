@@ -1,68 +1,307 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.loginform{
+ width: 300px;
+ height: 310px;
+ border: 2px solid rgb(30, 153, 30);
+ border-radius: 5px;
+ text-align: center;
+ padding-top: 30PX;
+ color:#1e991e ;
+ margin: 80px 450px;
+ background-color: rgb(241, 242, 243);
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.data{
+  font-size: 12px;
+  padding: 8px 16px;
+  margin-bottom: 30px;
+  /* color:rgb(30, 153, 30) ; */
 }
-a:hover {
-  color: #535bf2;
+.loginbtn{
+  background-color:rgb(30, 83, 30) ;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 5px;
+  font-size: 14px;
 }
-
-body {
-  margin: 0;
+/* =====================================login-Css-Completed================================================ */
+.nabvar{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-between;
+  background-color: #faebd7;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+}
+.nav1{
+  display: flex;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.nav1  a{
+padding-right: 100px;
+text-decoration: none;
+color: rgb(41, 44, 42);
+font-weight: 600;
+}
+.logoutbtn{
+  background-color:rgb(30, 83, 30) ;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 50px;
+}
+/* =============================home-complete=============== */
+
+.productinput{
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgb(30, 153, 30);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 20PX;
+  color:#1e991e ;
+  margin: 100px 450px;
+  background-color: rgb(241, 242, 243);
+}
+.productinput input{
+  font-size: 12px;
+  padding: 8px 16px;
+  margin-bottom: 30px;
+}
+.productinput button{
+  background-color:rgb(30, 83, 30) ;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* =======================add-product complete=========== */
+.searchinput{
+  text-align: center;  
+}
+.searchinput input{
+  font-size: 14px;
+  padding: 6px;
+  width: 260PX;
+}
+.searchinput button{
+  font-size: 14px;
+  padding: 6px;
+}
+/* ================================Search-css complete ==============*/
+
+.display{
+  text-align: center;
+  margin-top: 80px;
+}
+.table{
+  width: 70%;
+  /* border: 1px solid black; */
+}
+.table-header{
+  display: flex;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-left: 100px;
+}
+.table-header li{
+  /* text-decoration: none; */
+  padding: 10px 100px;
+}
+.display-table-row{
+  display: flex;
+  width: 100%;
 }
 
-button {
+.display-table-row li{
+  padding: 10px 100px;
+  margin-left: 70px;
+}
+
+
+/* ================================== */
+
+
+
+h1.display {
+  text-align: center;
+  margin: 20px;
+}
+
+.display-table {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.display-table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+}
+
+.display-table-row li {
+  flex: 1;
+  text-align: center;
+}
+
+.display-table-row li:first-child {
+  flex: 0.5;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .display-table-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  a:hover {
-    color: #747bff;
+
+  .display-table-row li {
+    text-align: left;
+    padding: 5px 10px;
+    width: 100%;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+  .display-table {
+    border: none;
+    border-radius: 0;
+  }
+
+  .display-table-row {
+    padding: 5px;
+  }
+
+  .display-table-row li {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  margin: 0 10px;
+  align-self: center;
+}
+
+
+/* ========================================== */
+
+/* General Reset */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6b6b6b;
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+/* Navigation Links */
+.nav1 {
+  display: flex;
+  gap: 10px;
+}
+
+.nav1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav1 a:hover {
+  color: #00ff62;
+}
+.logoutbtn {
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e63946;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutbtn:hover {
+  background-color: #d62828;
+}
+
+
+ul {
+  padding: 10px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav1 {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
   }
 }
